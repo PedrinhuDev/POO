@@ -122,4 +122,66 @@ let carro5 = {
     preço: 37.500
 }
 
+let carro6 = {
+    modelo: 'HONDA CIVIC',
+    marca: 'HONDA',
+    ano: 2020,
+    quilometragem: 63500,
+    potenciaMotor: 2.0,
+    cor: 'Branco',
+    preço: 116.000
+}
+
+let carro7 = {
+    modelo: 'Hillux',
+    marca: 'TOYOTA',
+    ano: 2020,
+    quilometragem: 83000,
+    potenciaMotor: 2.0,
+    cor: 'Branco',
+    preço: 219.000
+}
+
+let carro8 = {
+    modelo: 'Volkswagen Gol',
+    marca: 'Volkswagen',
+    ano: 2019,
+    quilometragem: 47067,
+    potenciaMotor: 1.6,
+    cor: 'Branco',
+    preço: 49.990
+}
+
+console.log('');
+
+console.log(`CARROS SEM FOR ---------------------------------------------------------`);
+
+console.log('');
+
+console.log(`${carro1.marca} ${carro1.modelo} ${carro1.ano} --> ${carro1.preço.toFixed(3)}`);
+console.log(`${carro2.marca} ${carro2.modelo} ${carro2.ano} --> ${carro2.preço.toFixed(3)}`);
+console.log(`${carro3.marca} ${carro3.modelo} ${carro3.ano} --> ${carro3.preço.toFixed(3)}`);
+console.log(`${carro4.marca} ${carro4.modelo} ${carro4.ano} --> ${carro4.preço.toFixed(3)}`);
+console.log(`${carro5.marca} ${carro5.modelo} ${carro5.ano} --> ${carro5.preço.toFixed(3)}`);
+
+let listaDeCarros = []
+
+listaDeCarros.push(carro1);
+listaDeCarros.push(carro2);
+listaDeCarros.push(carro3);
+listaDeCarros.push(carro4);
+listaDeCarros.push(carro5);
+listaDeCarros.push(carro6);
+listaDeCarros.push(carro7);
+listaDeCarros.push(carro8);
+
+console.log(``);
+
+console.log(`CARROS COM FOR ---------------------------------------------------------`);
+
+console.log(``);
+
+for (let i = 0; i < listaDeCarros.length; i++) {
+    console.log(`${listaDeCarros[i].marca} ${listaDeCarros[i].modelo} ${listaDeCarros.ano} --> ${listaDeCarros[i].preço.toFixed(3)}`);  
+}
 
