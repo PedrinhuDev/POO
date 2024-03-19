@@ -1,4 +1,5 @@
 let celular1 = {
+    foto:'XiaomiC65.jpg',
     marca: 'Xiaomi',
     modelo: 'C65',
     armazenamento: '256 GB',
@@ -11,6 +12,7 @@ let celular1 = {
 }
 
 let celular2 = {
+    foto: 'realme11x.jpg',
     marca: 'Realme',
     modelo: 'Realme 11X',
     armazenamento: '128 GB',
@@ -23,8 +25,9 @@ let celular2 = {
 }
 
 let celular3 = {
+    foto: 'MotoG54.png',
     marca: 'Motorola',
-    modelo: 'Moto G54 5G',
+    modelo: 'Moto G54',
     armazenamento: '256 GB',
     ram: '8 G',
     procossador: 'Dimensity 7020',
@@ -35,6 +38,7 @@ let celular3 = {
 }
 
 let celular4 = {
+    foto: 'GalaxyS24.jpg',
     marca: 'Samsung',
     modelo: 'Galaxy S24',
     armazenamento: '256 GB',
@@ -47,6 +51,7 @@ let celular4 = {
 }
 
 let celular5 = {
+    foto: 'Smart7.jpg',
     marca: 'Infinix',
     modelo: 'Smart 7',
     armazenamento: '64GB',
@@ -59,8 +64,9 @@ let celular5 = {
 }
 
 let celular6 = {
+    foto: 'iPhone13.jpg',
     marca: 'Apple',
-    modelo: 'Apple iPhone 13 (128GB) - Estelar',
+    modelo: 'iPhone 13',
     armazenamento: '128GB',
     ram: '4.0GB',
     procossador: 'A15 Bionic',
@@ -71,8 +77,9 @@ let celular6 = {
 }
 
 let celular7 = {
+    foto: 'MotoG23.jpg',
     marca: 'Motorola',
-    modelo: 'G23',
+    modelo: 'Moto G23',
     armazenamento: '128GB',
     ram: '4GB',
     procossador: 'Helio G85 Octa-Core',
@@ -85,6 +92,25 @@ let celular7 = {
 let listaDeCelulares = [celular1, celular2, celular3, celular4, celular5, celular6, celular7]
 
 for (let i = 0; i < listaDeCelulares.length; i++) {
-    console.log(`${listaDeCelulares[i].marca} ${listaDeCelulares[i].modelo} ${listaDeCelulares[i].armazenamento} ${listaDeCelulares[i].ram} ${listaDeCelulares[i].cor} --> R$ ${listaDeCelulares[i].preco}`);
+    console.log(`
+
+    ${listaDeCelulares[i].marca} ${listaDeCelulares[i].modelo} ${listaDeCelulares[i].armazenamento} ${listaDeCelulares[i].ram} ${listaDeCelulares[i].cor} --> R$ ${listaDeCelulares[i].preco}
+
+    `);
     
+    document.write(`
+
+    <div class= 'card'>
+        <img class='foto' src='img/${listaDeCelulares[i].foto}'>
+        <p class= 'nome'> ${listaDeCelulares[i].marca}  ${listaDeCelulares[i].modelo} </p>
+        <p class= 'armazenamento'> ${listaDeCelulares[i].armazenamento} </p>
+        <p class= 'ram'> ${listaDeCelulares[i].ram} </p>
+        <p class= 'processador'> ${listaDeCelulares[i].procossador} </p>
+        <p class= 'tipo_de_tela'> ${listaDeCelulares[i].tipoTela} </p>
+        <p class= 'cor'> ${listaDeCelulares[i].cor} </p>
+        <p class= 'bateria'> ${listaDeCelulares[i].bateria} </p>
+        <p class= 'preco'> R$ ${listaDeCelulares[i].preco} </p>
+    </div>
+
+    `)
 }

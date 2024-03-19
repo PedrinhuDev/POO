@@ -1,0 +1,80 @@
+body{
+    background-color: #b2b2f8; /* cor de fundo */
+}
+
+.card{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 400px;
+
+    padding: 20px;
+    margin-bottom: 20px;   
+
+    border-radius: 20px; /* arredondar as quinas */
+    background-color: #ffffff;
+    /* border: solid 1px #ff0000; */
+}
+
+.card:hover{
+    box-shadow: 4px 4px 24px #3a3aa7;
+}
+
+.foto{
+    width: 100%;
+    aspect-ratio: 1/1; /* corta a imagem sem distorcer */
+    object-fit: contain;
+}
+
+.nome{
+    
+    font-size: 28px;
+    font-weight: 800;
+    color: coral;
+
+    /* border: solid 1px #0000ff; */
+}
+
+.armazenamento{
+    font-size: 20px;
+
+    color: rgb(38, 110, 110);
+}
+
+.ram{
+    font-size: 20px;
+
+    color: rgb(38, 110, 110);
+}
+
+.processador{
+    font-size: 20px;
+
+    color: rgb(38, 110, 110);
+}
+
+.tipo_de_tela{
+    font-size: 20px;
+
+    color: rgb(38, 110, 110);
+}
+
+.cor{
+    font-size: 20px;
+
+    color: rgb(38, 110, 110);
+}
+
+.bateria{
+    font-size: 20px;
+
+    color: rgb(38, 110, 110);
+}
+
+.preco{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: right; /*alinhar o texto do paragrafo*/
+
+    color: rgb(100, 180, 19);
+
+    /* border: solid 1px chartreuse; */
+}
