@@ -134,17 +134,30 @@ let lancamentos = [
     serie10
 ]
 
-let listaDeSeries = [serie1, serie2, serie3, serie4, serie5, serie6, serie7, serie8, serie9, serie10]
-
-for (let i = 0; i < listaDeSeries.length; i++) {
+for (let i = 0; i < top5.length; i++) {
     document.write(`
     
     <div class="card">
-        <img class='poster' src="./img/${listaDeSeries[i].poster}" alt="">
-        <p class= "nome">${listaDeSeries[i].nome}</p>
-        <p class= "ator">Ator Principal:${listaDeSeries[i].atorPrincipal.nome} <br>Nascimento: ${listaDeSeries[i].atorPrincipal.dataDeNascimento} <br>Nacionalidade: ${listaDeSeries[i].atorPrincipal.nacionalidade}</p>
-        <p class= "ano">Lançamento: ${listaDeSeries[i].anoDeLancamento}</p>
-        <p class= "temporadas">${listaDeSeries[i].temporadas} Temporada(s)</p>
+        <img class='poster' src="./img/${top5[i].poster}" alt="">
+        <p class= "nome">${top5[i].nome}</p>
+        <p class= "ator">Ator Principal:${top5[i].atorPrincipal.nome} <br>Nascimento: ${top5[i].atorPrincipal.dataDeNascimento} <br>Nacionalidade: ${top5[i].atorPrincipal.nacionalidade}</p>
+        <p class= "ano">Lançamento: ${top5[i].anoDeLancamento}</p>
+        <p class= "temporadas">${top5[i].temporadas} Temporada(s)</p>
+    </div>
+
+    `)
+    
+}
+
+for (let i = 0; i < lancamentos.length; i++) {
+    document.write(`
+    
+    <div class="card">
+        <img class='poster' src="./img/${lancamentos[i].poster}" alt="">
+        <p class= "nome">${lancamentos[i].nome}</p>
+        <p class= "ator">Ator Principal:${lancamentos[i].atorPrincipal.nome} <br>Nascimento: ${lancamentos[i].atorPrincipal.dataDeNascimento} <br>Nacionalidade: ${lancamentos[i].atorPrincipal.nacionalidade}</p>
+        <p class= "ano">Lançamento: ${lancamentos[i].anoDeLancamento}</p>
+        <p class= "temporadas">${lancamentos[i].temporadas} Temporada(s)</p>
     </div>
 
     `)
