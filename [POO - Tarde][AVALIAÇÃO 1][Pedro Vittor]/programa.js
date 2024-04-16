@@ -144,7 +144,7 @@ for (let i = 0; i < listaDeSeries.length; i++) {
         <p class= "nome">${listaDeSeries[i].nome}</p>
         <p class= "ator">Ator Principal:${listaDeSeries[i].atorPrincipal.nome} <br>Nascimento: ${listaDeSeries[i].atorPrincipal.dataDeNascimento} <br>Nacionalidade: ${listaDeSeries[i].atorPrincipal.nacionalidade}</p>
         <p class= "ano">Lançamento: ${listaDeSeries[i].anoDeLancamento}</p>
-        <p class= "temporadas">${listaDeSeries[i].temporadas} Temporadas</p>
+        <p class= "temporadas">${listaDeSeries[i].temporadas} Temporada(s)</p>
     </div>
 
     `)
