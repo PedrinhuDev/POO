@@ -28,7 +28,6 @@ let notebook3 = {
     valor: 1852.00
 }
 
-
 let notebook4 = {
     marca: 'ASUS',
     modelo: 'Vivobook 15',
@@ -38,7 +37,6 @@ let notebook4 = {
     tamanhoDaTela: '15,6 Polegadas',
     valor: 2792.90
 }
-
 
 let notebook5 = {
     marca: 'Lenovo',
