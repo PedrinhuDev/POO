@@ -1,0 +1,15 @@
+body{
+
+}
+
+.card{
+    display: flex;
+    justify-content: space-evenly;
+
+    background-color: rgb(37, 34, 34);
+    color: rgb(172, 172, 172);
+}
+
+.card:nth-child(2n){
+    background-color: rgb(95, 95, 95);
+}
