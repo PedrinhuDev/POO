@@ -1,4 +1,4 @@
-function desenharCarrinhoDeCompras(carrinho, tagHTML) {
+function desenharCarrinhoDeCompras(carrinho, tagHTML, totalHTML) {
 
     tagHTML.innerHTML = '';
 
@@ -7,8 +7,10 @@ function desenharCarrinhoDeCompras(carrinho, tagHTML) {
         <div class='card'>
             <span>${carrinho.listaDeProdutos[i].id}</span>
             <span>${carrinho.listaDeProdutos[i].descricao}</span>
+            <span>${carrinho.listaDeProdutos[i].fabricante}</span>
             <span>${carrinho.listaDeProdutos[i].precoUnitario}</span>
         </div>`;
-        
     }
+
+    totalHTML.innerHTML = `Total: R$${carrinho.calcularTotal()}`;
 }

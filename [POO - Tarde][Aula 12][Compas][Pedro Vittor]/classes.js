@@ -1,8 +1,9 @@
 class Produto{
-    constructor(id, descricao, precoUnitario){
+    constructor(id, descricao, fabricante, precoUnitario){
         this.id = id;
         this.descricao = descricao;
-        this.precoUnitario = precoUnitario;
+        this.fabricante = fabricante;
+        this.precoUnitario = Number(precoUnitario);
     }
 }
 
@@ -19,5 +20,13 @@ class CarrinhoDeCompras{
         else{
             console.log('Produto não encontrado');
         }
+    }
+
+    calcularTotal(){
+        let total = 0;
+        for (let i = 0; i < this.listaDeProdutos.length; i++){
+            total += this.listaDeProdutos[i].precoUnitario;
+        }
+        return total;
     }
 }
